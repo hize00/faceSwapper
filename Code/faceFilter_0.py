@@ -300,6 +300,7 @@ def FaceSwapper(frame, faceImg, words):
 --->> CALL FILTER FUNCTIONS
 ======================================================== """
 
+
 def video(src=0, face_filter='eyeliner'):
     counter_timeout = 0
     cap = cv2.VideoCapture(src)

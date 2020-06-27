@@ -190,8 +190,8 @@ MAIN
 
 if __name__ == "__main__":
 
-    image1 = "D:\\RANDOM CLF\\faceFilters\\Code\\faces\\ghera.jpg"
-    image2 = "D:\\RANDOM CLF\\faceFilters\\Code\\faces\\ste.jpg"
+    image1 = "D:\\RANDOM CLF\\faceFilters\\Code\\faces\\clf.jpg"
+    image2 = "D:\\RANDOM CLF\\faceFilters\\Code\\faces\\cava.jpg"
     output = "D:\\RANDOM CLF\\faceFilters\\Code\\faces\\output.jpg"
     
     im1, landmarks1 = read_im_and_landmarks_from_file(image1)
@@ -208,8 +208,6 @@ if __name__ == "__main__":
 
     output_im = im1 * (1.0 - combined_mask) + warped_corrected_im2 * combined_mask
     cv2.imwrite(output, output_im)
-    
 
     swapped = faceSwap(image1, image2)
     cv2.imwrite(output, swapped)
-#"""
